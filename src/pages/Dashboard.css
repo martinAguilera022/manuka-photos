@@ -1,0 +1,197 @@
+/* 🌍 DASHBOARD */
+.dashboard {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #efe2cf, #f7aa20);
+	padding: 20px;
+}
+
+/* 🧾 CARD */
+.card {
+	background: white;
+	padding: 30px;
+	border-radius: 25px;
+	width: 100%;
+	max-width: 380px;
+	text-align: center;
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+	animation: fadeUp 0.4s ease;
+}
+
+.card h1 {
+	color: #1a99aa;
+	margin-bottom: 5px;
+}
+
+.subtitle {
+	color: #666;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+/* 📷 UPLOAD */
+.upload-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	border: 2px dashed #1a99aa;
+	border-radius: 20px;
+	padding: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.upload-box:hover {
+	background: #efe2cf;
+	transform: scale(1.02);
+}
+
+.upload-icon {
+	font-size: 30px;
+}
+
+.upload-text {
+	margin-top: 5px;
+	font-weight: 500;
+}
+
+/* 🖼 PREVIEW */
+.preview {
+	margin-top: 15px;
+	position: relative;
+}
+
+.preview img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+/* overlay */
+.preview-overlay {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0, 0, 0, 0.6);
+	color: white;
+	padding: 6px 12px;
+	border-radius: 10px;
+	font-size: 13px;
+}
+
+/* ❌ REMOVE */
+.remove-btn {
+	margin-top: 10px;
+	background: #ec5a41;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+/* 🚀 BOTÓN */
+.submit-btn {
+	margin-top: 20px;
+	padding: 14px;
+	width: 100%;
+	border: none;
+	border-radius: 15px;
+	background: #ccc;
+	color: white;
+	font-size: 16px;
+	transition: 0.3s;
+}
+
+.submit-btn.active {
+	background: #1a99aa;
+	cursor: pointer;
+}
+
+.submit-btn.active:hover {
+	transform: scale(1.03);
+}
+
+/* 🎉 SUCCESS */
+.success-screen {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #efe2cf, #f7aa20);
+}
+
+.success-card {
+	background: white;
+	padding: 40px;
+	border-radius: 25px;
+	text-align: center;
+	animation: scaleIn 0.5s ease;
+}
+
+.success-title {
+	color: #1a99aa;
+	font-size: 28px;
+}
+
+/* 🎭 PERSONAJE */
+.success-character {
+	width: 120px;
+	margin-bottom: 10px;
+	animation: float 3s infinite ease-in-out;
+}
+
+/* 🎬 ANIMACIONES */
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes scaleIn {
+	0% {
+		transform: scale(0.6);
+		opacity: 0;
+	}
+	80% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+.card:hover {
+	transform: translateY(-5px);
+}
+.success-btn {
+	margin-top: 20px;
+	padding: 14px 30px;
+	border: none;
+	border-radius: 15px;
+	background: #1a99aa;
+	color: white;
+	font-size: 16px;
+	transition: 0.3s;
+}

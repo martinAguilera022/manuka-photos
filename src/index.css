@@ -1,0 +1,40 @@
+:root {
+	--primary: #1a99aa;
+	--secondary: #c5b35d;
+	--accent: #f7aa20;
+	--danger: #ec5a41;
+	--soft: #efe2cf;
+	--pink: #f18d8d;
+
+	--text: #2d2d2d;
+	--white: #ffffff;
+}
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: var(--soft);
+	color: var(--text);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #2563eb;
+}
+
+button {
+	font-family: inherit;
+}
+button {
+	transition: transform 0.1s ease;
+}
+.secondary-btn {
+	background: var(--secondary);
+	color: white;
+}
+button:active {
+	transform: scale(0.97);
+}
