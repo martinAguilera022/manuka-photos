@@ -1,6 +1,6 @@
 .auth-container {
-	max-width: 380px;
-	margin: 80px auto;
+	max-width: 320px;
+	margin: 3px auto;
 	padding: 30px;
 	text-align: center;
 	background: var(--white);
@@ -63,12 +63,13 @@
 }
 
 .divider {
-	margin: 20px 0;
+	margin: 3px 0;
 	color: #aaa;
 }
 .logo {
-	width: 100px;
-	margin-bottom: 10px;
+	width: 300px;
+	margin-top: 40px;
+	fill: var(--accent);
 }
 .character {
 	width: 120px;
@@ -78,13 +79,32 @@
 	position: absolute;
 	left: 50%;
 	transform: translateX(-200px);
-	top: -10px;
+	top: -5px;
 	z-index: 1;
 }
-.character-container img {
-	animation: float 3s ease-in-out infinite;
+.bienvenido-auth {
+	background-image: url("/CARTULINA.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 120%;
+
+	height: 50px;
+	text-align: center;
+	padding: 0px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.bienvenido-auth h1 {
+	font-size: 24px;
+	color: #fff;
 }
 
+
+.float {
+	animation: float 3s ease-in-out infinite;
+}
 @keyframes float {
 	0% {
 		transform: translateY(0);
@@ -97,7 +117,7 @@
 	}
 }
 .character-container img {
-	width: 140px;
+	width: 160px;
 }
 .auth-form input:last-child {
 	margin-bottom: 16px;
@@ -109,4 +129,97 @@
 	border-radius: 10px;
 	margin-bottom: 10px;
 	font-size: 14px;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #ffffff;
+	border: 3px solid #000;
+	border-radius: 20px;
+	padding: 12px 16px;
+	max-width: 280px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 14px;
+	box-shadow: 4px 4px 0 #000;
+	margin-top: 10px;
+}
+
+/* Colita del globo */
+.speech-image {
+	background-image: url("/NUBE.png"); /* tu PNG */
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 170px; /* ajustá según tu imagen */
+	height: 170px; /* ajustá según tu imagen */
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-shadow: 0.125rem;
+	filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+	padding: 20px;
+}
+
+.speech-image p {
+	max-width: 180px;
+	margin: 0;
+	font-family: interstate, cursive;
+	font-size: 12px;
+	font-weight: bold;
+	color: var(--primary);
+}
+.character-container {
+	position: absolute;
+	left: 70%;
+
+	top: 597px;
+	z-index: 1;
+}
+.auth-wrapper {
+	padding: 10px 20px; /* 👈 FIX */
+	min-height: 100dvh;
+	height: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.auth-wrapper {
+	width: 100%;
+	max-width: 1200px; /* opcional */
+}
+.auth-wrapper {
+	position: relative;
+	z-index: 0;
+}
+
+/* IMPORTANTE 👇 */
+.speech-image {
+	position: absolute;
+	top: -70px;
+	left: 100px;
+
+	pointer-events: none;
+	padding-left: 50px;
+	padding-right: 25px;
+	padding-bottom: 50px;
+}
+
+.auth-header {
+	margin-bottom: 2px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 10px;
+}
+.auth-wrapper {
+	padding: 10px 20px;
+	min-width: 100vw;
+}
+.character-container .float .character-2 {
+	transform: rotate(60deg);
+	width: 200px;
+	top:20px
 }

@@ -11,9 +11,10 @@
 }
 body {
 	margin: 0;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "interstate", sans-serif;
 	background: var(--soft);
 	color: var(--text);
+	index: -5;
 }
 
 * {

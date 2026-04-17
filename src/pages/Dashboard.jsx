@@ -84,7 +84,7 @@ const playSound = () => {
       <div className="success-screen">
         <div className="success-card">
 
-          <img src="/Manuka.png" className="success-character" />
+          <img src="/manuka-fotografa.png" className="success-character" />
 
           <h1 className="success-title">¡Te ves Genial! 🎉</h1>
           <p>Tu foto fue enviada con exito</p>
